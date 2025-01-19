@@ -1,7 +1,9 @@
 const Button = ({ name }) => {
   return (
-    <div>
-      <button className="bg-gray-300 rounded-lg px-6 py-2 m-4">{name}</button>
+    <div className="">
+      <button className="bg-gray-300 rounded-lg px-4 py-2 m-4 whitespace-nowrap overflow-hidden">
+        {name}
+      </button>
     </div>
   );
 };

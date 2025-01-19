@@ -1,18 +1,25 @@
 import Button from "./Button";
 
+const lists = [
+  "All",
+  "Live",
+  "Podcasts",
+  "Music",
+  "Shopping",
+  "Products",
+  "Web Series",
+  "Cricket",
+  "Mixes",
+  "Dramas",
+  "Shorts",
+  "Game",
+];
 const ButtonList = () => {
   return (
-    <div className="flex">
-      <Button name={"All"} />
-      <Button name={"Live"} />
-      <Button name={"Podcasts"} />
-      <Button name={"Music"} />
-      <Button name={"Shopping"} />
-      <Button name={"Products"} />
-      <Button name={"Web Series"} />
-      <Button name={"Cricket"} />
-      <Button name={"Mixes"} />
-      <Button name={"Dramas"} />
+    <div className="flex items-center">
+      {lists.map((list) => (
+        <Button name={list} />
+      ))}
     </div>
   );
 };

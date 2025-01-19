@@ -39,7 +39,7 @@ const Head = () => {
     );
   };
   return (
-    <div className="p-6 grid grid-flow-col shadow-lg ">
+    <div className="p-6 grid grid-flow-col shadow-lg">
       <div className="flex col-span-1">
         <img
           className="h-8 cursor-pointer"
